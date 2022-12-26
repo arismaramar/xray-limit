@@ -63,8 +63,8 @@ frontend ssl
         acl web req_ssl_sni -i xxx
         acl is_ssh req.payload(0,7) -m bin 5353482d322e30        
         use_backend FighterTunnel  if web
-        use_backend ft1 if { path -i /vless }
-        use_backend ft2 if { path -i /vmess }
+        use_backend ft1 if { path -i /vless-ws }
+        use_backend ft2 if { path -i /vmess-ws }
         use_backend ft3 if { path -i /trojan-ws }
         use_backend ft4 if { path -i /ss-ws }
         use_backend ft5 if { path -i /vless-grpc }
