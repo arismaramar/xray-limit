@@ -1,13 +1,13 @@
 #!/bin/sh
 GIT_CMD="https://raw.githubusercontent.com/vinstechmy/MiniMultipath/"
 ns_domain_cloudflare() {
-	DOMAIN="slowdns.app"
+	DOMAIN="cloudnetwork.gq"
 	DAOMIN=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c6)
-	SUB_DOMAIN=${SUB}."slowdns.app"
+	SUB_DOMAIN=${SUB}."cloudnetwork.gq"
 	NS_DOMAIN=ns.${SUB_DOMAIN}
-	CF_ID=nuryahyamuhaimin@gmail.com
-        CF_KEY=9dd2f30c099dbcf541cbd5c188d61ce060cf7
+	CF_ID=wadapap.work@gmail.com
+        CF_KEY=ed1985d85a72859bb05589fa74eb92274c484
 	set -euo pipefail
 	IP=$(wget -qO- ipinfo.io/ip)
 	echo "Updating DNS NS for ${NS_DOMAIN}..."
