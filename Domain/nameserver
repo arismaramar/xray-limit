@@ -1,4 +1,5 @@
 #!/bin/sh
+GIT_CMD="https://github.com/arismaramar/xray-limit/raw/main/"
 GIT_CMD="https://raw.githubusercontent.com/arismaramar/xray-limit/"
 ns_domain_cloudflare() {
 	DOMAIN="remoot.shop"
