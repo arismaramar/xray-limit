@@ -1,6 +1,6 @@
 [Unit]
 Description=UDP 7300
-Documentation=https://t.me/Vinstechmy
+Documentation=https://t.me/anggun2
 After=syslog.target network-online.target
 
 [Service]
