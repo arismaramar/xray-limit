@@ -14,4 +14,4 @@ sed -i -e 's/\r$//' /usr/bin/run
 sed -i -e 's/\r$//' /usr/bin/seres
 sed -i -e 's/\r$//' /usr/bin/port
 sed -i -e 's/\r$//' /usr/bin/xp
-curl https://raw.githubusercontent.com/xxxserxxx/gotop/master/scripts/download.sh | bash && chmod +x gotop && sudo mv gotop /usr/local/bin/
+curl https://raw.githubusercontent.com/xxxserxxx/gotop/master/scripts/download.sh | && chmod +x gotop && sudo mv gotop /usr/local/bin/
