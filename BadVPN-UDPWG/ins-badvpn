@@ -1,5 +1,5 @@
 #!/bin/bash
-GITHUB_CMD="https://github.com/remooot/gif/raw/"
+GITHUB_CMD="https://github.com/arismaramar/xray-limit/raw/"
 wget -O /usr/bin/badvpn "${GITHUB_CMD}main/BadVPN-UDPWG/newudpgw" >/dev/null 2>&1
 chmod +x /usr/bin/badvpn > /dev/null 2>&1
 wget -q -O /etc/systemd/system/badvpn1.service "${GITHUB_CMD}main/BadVPN-UDPWG/badvpn1.service" >/dev/null 2>&1
