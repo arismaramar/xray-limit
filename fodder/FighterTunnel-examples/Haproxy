@@ -60,7 +60,7 @@ frontend ssl
         tcp-request content accept if { req.payload(0,11) -m found }
         tcp-request content accept if WAIT_END 
         tcp-request content accept if { req.ssl_hello_type 1 }
-        acl web req_ssl_sni -i xxx
+        acl web req_ssl_sni -i 127.0.0.1
         acl is_ssh req.payload(0,7) -m bin 5353482d322e30        
         use_backend FighterTunnel  if web
         use_backend ft1 if { path -i /vless-ws }
